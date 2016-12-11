@@ -250,3 +250,9 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+# Ignore vim swap files
+*.swp
+
+# mkdocs build dir
+docs/site

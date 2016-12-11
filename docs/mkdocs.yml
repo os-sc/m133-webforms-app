@@ -1,0 +1,9 @@
+site_name: M133
+
+pages:
+    - 'Index': 'index.md'
+    - 'Cover Sheet': 'cover.md'
+    - 'Main': 'main.md'
+    - 'Sources': 'src.md'
+
+
