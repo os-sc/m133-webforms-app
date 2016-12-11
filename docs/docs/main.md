@@ -43,11 +43,11 @@ Once logged in, the user is presented with following page layout
 ```
   Main
   |---My Account
-  |   |---My Rentals
   |   |---Account Settings
   |       |---Change Personal Data
   |       |---Change Password
-  |---New Rental
+  |---My Rentals
+      |---New Rental
 ```
 
 
@@ -59,11 +59,10 @@ Once logged in, the user is presented with following page layout
 ******
 ## Concept
 
-<!-- TODO -->
-
 ### Functionality
 
-When registering as a new customer the user **has to** 
+When registering as a new customer the user must fill in his
+personal data, including, but not limited to, his full name and address.  
 
 After a successfull registration and/or login, the user will be
 able to navigate to his personal profile page, where the user has
@@ -73,7 +72,12 @@ Note that he **will not** be able to view his password
 as it is in a hashed state, which is irreversable for
 security reasons.  
 
+The user may also chose to navigate to the `My Rentals`-page,
+where he has the ability to view his past rentals and view or extend
+the currently active ones as well as make a new reservation.  
 
+Every toy is only found once in the library and
+can therefore only be rented once at the same time.  
 
 ### Realization Concept
 
@@ -86,7 +90,7 @@ on the file system of the server.
 <!-- TODO: User handling/registration -->
 
 The password rules are set to allow any combination of characters
-as long as the amount of characters exceeds 15, no requirements for
+as long as the amount of characters exceeds 15 (and less than 64 to protect the server from `DOS`-attacks), no requirements for
 a minimum set of numbers, special characters or the like.
 This is because a longer password is more secure than a shorter,
 more sophisticated one and enforcing specific characters encourages the
