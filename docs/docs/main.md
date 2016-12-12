@@ -17,7 +17,7 @@ the rentals and letting users register themselves and manage their accounts and 
 The web application **will not** handle toy management, as this is already implemented in their
 Desktop application.  
 
-##### Requirements for the application are:
+#### Requirements for the application are:
  * users must be able register themselves
  * users must be able to log in to their accouns
  * users must fill in their personal data after the first login
@@ -30,7 +30,7 @@ Desktop application.
 
 #### Page Layout
 
-As a not logged-in user
+As a not logged-in user:  
 
 ```
   Main
@@ -38,23 +38,42 @@ As a not logged-in user
   |---Register
 ```
 
-Once logged in, the user is presented with following page layout
-<!-- TODO -->
+Once logged in, the user is presented with following page layout:  
+
 ```
   Main
   |---My Account
-  |   |---Account Settings
-  |       |---Change Personal Data
-  |       |---Change Password
+  |   \--Change Personal Details
+  |   \--Change Password
+  |   \--Logout
+  |
   |---My Rentals
-      |---New Rental
+      \--New Rental
 ```
 
+#### Page Design & UX
+
+In order to present the user with a solid UX experience
+and a consistent appearing UI, Google's `Material Design Lite`-library will
+be used.
+The library allows for an easy, quick and seamless integration and
+is very lightweight.  
+<!-- TODO -->
 
 ### Test Criteria
 
+#### Login / Registration
+
+ * As long as the user is not authenticated, the `Login` and `Register` menu entries must be displayed and the menu entries for logged in users (like `My Account`) shall not.  
+ * When a user registrates and does not enter valid information (like non-matching passwords) the user shall be notified using a `Toast`\* or simmilar error reporting.  
+
+#### Rentals
+#### Users & User Data
+
 <!-- TODO -->
 
+\* `Toast`:  
+*A `Toast` is an element commonly used in `Material Design` that pops up, usually from the bottom of the screen, to display a message*  
 
 ******
 ## Concept
