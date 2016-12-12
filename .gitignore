@@ -256,3 +256,6 @@ paket-files/
 
 # mkdocs build dir
 docs/site
+
+# pencil build dir
+mockups/builds
