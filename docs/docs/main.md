@@ -115,12 +115,13 @@ can therefore only be rented once at the same time.
 
 |Date          |Plans
 |:-------------|:----
-|01.01.1970    |
-|01.01.1970    |
-|01.01.1970    |
-|**01.01.1970**|
-|01.01.1970    |
-|**01.01.1970**|
+|**06.12.2016**| Start project
+|09.12.2016    | Finished analysis parts of documentation and rough estimate of time table
+|13.12.2016    | Mostly finished Concepts
+|18.12.2016    | Done with implementation and Realization chapters of documentation
+|**20.12.2016**| Deadline project (1700)
+|08.01.2017    | Finished preparing the presenation
+|**10.01.2017**| Presentation
 
 #### Data Structure
 
