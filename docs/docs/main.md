@@ -58,7 +58,13 @@ and a consistent appearing UI, Google's `Material Design Lite`-library will
 be used.
 The library allows for an easy, quick and seamless integration and
 is very lightweight.  
-<!-- TODO -->
+
+The Application is going to be responsive since that is a necessity
+to provide mobile users with a good UX experience.
+To ease this process, the design will be based on cards, this means,
+that the pages content is presented on card of different sizes,
+which in turn makes it easy to append content later without breaking page flow
+or layout.  
 
 ### Test Criteria
 
@@ -68,12 +74,17 @@ is very lightweight.
  * When a user registrates and does not enter valid information (like non-matching passwords) the user shall be notified using a `Toast`\* or simmilar error reporting.  
 
 #### Rentals
+
+ * Once a Toy is in rental it should no longer be available for rental by other users  
+ * A Toy can be rented for one or two weeks initially  
+ * At any point a toy can be extended to a maximum of four weeks in total  
+
 #### Users & User Data
+ * Users need to be able to change their data from the `My Account` menu
+ * The same goes for their passwords  
+ * After successful saving of the new data or an error during the saving or receiving the user should be notified about it through a `Toast`\*  
 
-<!-- TODO -->
-
-\* `Toast`:  
-*A `Toast` is an element commonly used in `Material Design` that pops up, usually from the bottom of the screen, to display a message*  
+\* `Toast`: *A `Toast` is an element commonly used in `Material Design` that pops up, usually from the bottom of the screen, to display a message*  
 
 ******
 ## Concept
@@ -99,6 +110,17 @@ Every toy is only found once in the library and
 can therefore only be rented once at the same time.  
 
 ### Realization Concept
+
+#### Time Table
+
+|Date          |Plans
+|:-------------|:----
+|01.01.1970    |
+|01.01.1970    |
+|01.01.1970    |
+|**01.01.1970**|
+|01.01.1970    |
+|**01.01.1970**|
 
 #### Data Structure
 
