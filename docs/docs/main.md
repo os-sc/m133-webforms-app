@@ -19,7 +19,7 @@ Desktop application.
 
 ### Requirements
 
-#### Functional
+#### Functional Requirements
  * users must be able register themselves
  * users must be able to log in to their accouns
  * users must fill in their personal data after the first login
@@ -27,8 +27,20 @@ Desktop application.
  * users must be able to make a rental for a toy
  * users must be able to view all their past rentals
 
-#### Non-Functional
- * blaasd
+#### Non-Functional Requirements
+ * the toys must be saved serverside in a file
+ * the same applies to rentals
+ * every game must only be available once, therefore it can only be rented once at a time
+ * every rental must only consist of one toy
+ * a user must be able to have more than one rental at a time
+
+#### Non-Defined Requirements
+These are some requirements that the document received does not clearly state
+so following are decisions made by myself.  
+
+ * rentals can be extended an unlimited amount of times, as long as they are active  
+ * when renting a toy, the rental starts instantly and cannot be   
+ <!-- TODO -->
 
 ### Planing
 
@@ -48,6 +60,7 @@ Once logged in, the user is presented with following page layout:
   Main
   |---My Account
   |   \--Change Personal Details
+  
   |   \--Change Password
   |   \--Logout
   |
@@ -81,7 +94,7 @@ or layout.
 
  * Once a Toy is in rental it should no longer be available for rental by other users  
  * A Toy can be rented for one or two weeks initially  
- * At any point a toy can be extended to a maximum of four weeks in total  
+ * At any point a toy can be extended an unlimited number of times, as long as the rental is still active  
 
 #### Users & User Data
  * Users need to be able to change their data from the `My Account` menu
@@ -129,11 +142,11 @@ can therefore only be rented once at the same time.
 
 #### Data Structure
 
-All data will be saved in the `JSON` format as a file
+All data will be saved in the `XML` format as a file
 on the file system of the server.  
 
 There will be a need for three types of data: `Users`, `Rentals`, `Toys`.  
-These could be saved in separate `JSON` files `users.json`, `rentals.json`
+These could be saved in separate `XML` files `users.json`, `rentals.json`
 and `toys.json`.
 
 #### User Data
