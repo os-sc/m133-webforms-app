@@ -17,7 +17,9 @@ the rentals and letting users register themselves and manage their accounts and 
 The web application **will not** handle toy management, as this is already implemented in their
 Desktop application.  
 
-#### Requirements for the application are:
+### Requirements
+
+#### Functional
  * users must be able register themselves
  * users must be able to log in to their accouns
  * users must fill in their personal data after the first login
@@ -25,6 +27,8 @@ Desktop application.
  * users must be able to make a rental for a toy
  * users must be able to view all their past rentals
 
+#### Non-Functional
+ * blaasd
 
 ### Planing
 
@@ -125,8 +129,12 @@ can therefore only be rented once at the same time.
 
 #### Data Structure
 
-The data will be saved in the `JSON`-format as a file
+All data will be saved in the `JSON` format as a file
 on the file system of the server.  
+
+There will be a need for three types of data: `Users`, `Rentals`, `Toys`.  
+These could be saved in separate `JSON` files `users.json`, `rentals.json`
+and `toys.json`.
 
 #### User Data
 <!-- TODO: User handling/registration -->
