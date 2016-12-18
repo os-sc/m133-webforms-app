@@ -1,0 +1,71 @@
+﻿body {
+    background-color: #B65D5C;
+    /* image credit: https://newevolutiondesigns.com/google-material-design-wallpapers */
+    background-image: url("/Content/cubes-wallpaper.jpg");
+
+    background-size: cover;
+    color: white;
+}
+
+footer {
+    color: white;
+    font-weight: bold;
+}
+
+footer>p {
+    text-align: center;
+}
+
+span.bold {
+    font-weight: 700;
+}
+
+.content-card h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.content-card h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.main-container {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 50%;
+}
+
+.content-card {
+    min-height: 5px;
+    padding: 5px 10px 20px 10px;
+    margin-bottom: 20px;
+}
+
+.warning-text {
+    color: orange;
+}
+
+table.full-width {
+    width: 100%;
+}
+
+a.noformat-link {
+    color: white;
+    text-decoration: none;
+}
+
+.bright-background {
+    background: rgba(250, 250, 250, 0.93);
+    color: rgba(0,0,0,.87);
+}
+
+.stop-float {
+    clear: both;
+}
+
+/* NAVIGATION */
+
+.mdl-layout__header-row .mdl-navigation__link:hover {
+    text-decoration: underline;
+}
